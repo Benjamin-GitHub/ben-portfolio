@@ -1,0 +1,141 @@
+{
+    "basics": {
+        "name": "Benjamin Mehrdad",
+        "label": "Full Stack Web Developer",
+        "email": "benjaminmhrdd@gmail.com",
+        "phone": "(XXX) XXX-XXXX",
+        "picture": "bm.png",
+        "x_title": "Hello, I'm",
+        "job1": "Web",
+        "job2": "Developer",
+        "description": "Hello! I'm Ben! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
+        "summary": "based in London, UK.",
+        "keywords": "personal,website,portfolio,template,kit,Benjamin,Mehrdad,webdev,web,developer,London,UK,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
+        "url": "https://www.ben-m.dev/",
+        "location": {
+            "address": "XX XXXXXstreet",
+            "postalCode": "XXXXX",
+            "city": "LONDON",
+            "country": "United Kingdom",
+            "countryCode": "UK",
+            "region": "London"
+        },
+        "profiles": [
+            {
+                "network": "Google",
+                "username": "benjaminmhrdd@gmail.com",
+                "url": "mailto:benjaminmhrdd@gmail.com",
+                "x_icon": "fab fa-google"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "benjamin-yamin-mehrdad",
+                "url": "https://www.linkedin.com/in/benjamin-yamin-mehrdad/",
+                "x_icon": "fab fa-linkedin-in"
+            },
+            {
+                "network": "GitHub",
+                "username": "benjamin-github",
+                "url": "https://github.com/Benjamin-GitHub",
+                "x_icon": "fab fa-github"
+            },
+            {
+                "network": "GitLab",
+                "username": "benjamin-github",
+                "url": "https://gitlab.com/Benjamin-GitHub",
+                "x_icon": "fab fa-gitlab"
+            },
+            {
+                "network": "Telegram",
+                "username": "Benjaminmehrdad",
+                "url": "https://t.me/benjaminmehrdad",
+                "x_icon": "fab fa-telegram-plane"
+            },
+            {
+                "network": "Discord",
+                "username": "benmhrdd",
+                "url": "https://discord.com",
+                "x_icon": "fab fa-discord"
+            }
+        ]
+    },
+    "work": [
+        {
+            "company": "Company",
+            "position": "President",
+            "website": "http://company.com",
+            "startDate": "2013-01-01",
+            "endDate": "2014-01-01",
+            "summary": "Description...",
+            "highlights": ["Started the company"]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "website": "http://organization.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Description...",
+            "highlights": ["Awarded 'Volunteer of the Month'"]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University",
+            "area": "Software Development",
+            "studyType": "Bachelor",
+            "startDate": "2011-01-01",
+            "endDate": "2013-01-01",
+            "gpa": "4.0",
+            "courses": ["DB1101 - Basic SQL"]
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "website": "http://publication.com",
+            "summary": "Description..."
+        }
+    ],
+    "skills": [
+        {
+            "name": "Full Stack Web Development",
+            "level": "Master",
+            "keywords": ["HTML", "CSS", "Javascript"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Farsi",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Fluent speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": ["Ferrets", "Unicorns"]
+        }
+    ],
+    "references": [
+        {
+            "name": "Mark Graham",
+            "reference": "Reference..."
+        }
+    ]
+}
