@@ -4,12 +4,14 @@ import { useState } from "react";
 import { Container } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
+
 import './Works.css';
 
 // Import ../../assets/projects/
 import Portfolio from '../../assets/projects/react-portfolio.png';
 import Deskeando from '../../assets/projects/deskeando.png';
 import Quiz from '../../assets/projects/quiz.png';
+
 
 const useStyles = makeStyles((theme) => ({
   main: {
