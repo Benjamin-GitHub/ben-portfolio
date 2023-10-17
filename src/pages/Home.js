@@ -24,25 +24,23 @@ const useStyles = makeStyles(() => ({
 export const Home = () => {
   const classes = useStyles();
 
-  return (
-    <>
-      <div className={classes.root} id="home">
-        <DisplacementSphere />
-        <LogoLink />
-        <Content />
-        <ThemeToggle />
-        <Hidden smDown>
-          <SocialIcons />
-        </Hidden>
-        <Hidden mdUp>
-          <SpeedDials />
-        </Hidden>
-        <Resume />
-      </div>
-      <SideNavbar />
-      <Works />
-      <About />
-      <Contact />
-    </>
-  );
+  return <>
+    <div className={classes.root} id="home">
+      <DisplacementSphere />
+      <LogoLink />
+      <Content />
+      <ThemeToggle />
+      <Hidden smDown>
+        <SocialIcons />
+      </Hidden>
+      <Hidden mdUp>
+        <SpeedDials />
+      </Hidden>
+      <Resume />
+    </div>
+    <SideNavbar />
+    <Works />
+    <About />
+    <Contact />
+  </>;
 };

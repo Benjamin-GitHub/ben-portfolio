@@ -1,6 +1,6 @@
 {
   "name": "ben-portfolio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "",
   "description": "A clean and customizable ReactJS portfolio template for fellow developers.",
   "repository": "https://github.com/Benjamin-GitHub/ben-portfolio",
@@ -25,6 +25,7 @@
     "react-transition-group": "^4.4.1",
     "react-typical": "^0.1.3",
     "reactstrap": "^9.2.0",
+    "styled-components": "^6.1.0",
     "sweetalert2": "^11.4.10",
     "three": "^0.125.0",
     "use-dencrypt-effect": "1.0.1"

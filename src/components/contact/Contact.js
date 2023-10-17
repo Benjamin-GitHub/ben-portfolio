@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useRef } from "react";
-import { Container, Typography, TextField, Button } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
+import { Container, Typography, TextField } from "@material-ui/core";
+import { makeStyles } from '@material-ui/core/styles';
 import { TextDecrypt } from "../content/TextDecrypt";
 import Swal from 'sweetalert2';
 
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   form: {
     width: '100%',
   },
-  formfield: {
+  formField: {
     width: '100%',
     marginBottom: '2rem',
   },
@@ -66,20 +66,22 @@ export const Contact = () => {
                   type="text"
                   size="small"
                   variant="filled"
+                  autoComplete="on"
                   name="name"
-                  className={classes.formfield}
+                  className={classes.formField}
                 />
                 <TextField
-                  id="outlined-password-input"
+                  id="outlined-email-input"
                   label="Email"
                   type="email"
                   size="small"
                   variant="filled"
+                  autoComplete="on"
                   name="email"
-                  className={classes.formfield}
+                  className={classes.formField}
                 />
                 <TextField
-                  id="outlined-password-input"
+                  id="outlined-message-input"
                   label="Message"
                   type="textarea"
                   size="small"
@@ -87,7 +89,7 @@ export const Contact = () => {
                   minRows={5}
                   variant="filled"
                   name="message"
-                  className={classes.formfield}
+                  className={classes.formField}
                 />
                 <button type="submit" value="Send" className="submit-btn">
                 <i className="fas fa-terminal"></i>
