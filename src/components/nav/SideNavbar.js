@@ -9,9 +9,9 @@ export const SideNavbar = () => {
 
   return (
     <nav>
-      <a href="#" 
-        onClick={() => setActiveNav('#')}
-        className={activeNav === '#' ? 'active' : ''}
+      <a href="#home" 
+        onClick={() => setActiveNav('#home')}
+        className={activeNav === '#home' ? 'active' : ''}
       >
         <Typography>
           Home

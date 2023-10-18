@@ -41,7 +41,7 @@ export const SocialIcons = () => {
           color='inherit'
           aria-label={socialItem.network}
           className={classes.iconButton}
-        >
+          size="large">
           <i className={`${classes.icon} ${socialItem.x_icon}`}></i>
         </IconButton>
       </Tooltip>
