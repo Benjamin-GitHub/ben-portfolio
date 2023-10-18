@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm ${FirstName} ${LastName}, a multidisciplinary 
-                  designer & developer. I'm always down for something new and challenging!
-                  I'm here to help you create beautifully formatted websites. 
-                  My projects mostly includes web development.`;
-
+  const aboutMe = `I'm ${FirstName} ${LastName}, Hardworking, motivated
+   and reliable web developer who has experience working individually and
+    as part of a team. After a decade of working as a technician and engineer, 
+    I decided to relocate to the UK and follow my passion for technology, 
+    joining an intense year-long boot-camp in web development.`;
   return (
     <section id="about">
       <Container component="main" className={classes.main} maxWidth="md">
@@ -43,7 +43,7 @@ export const About = () => {
               <TextDecrypt text={`${greetings}`} />
             </Typography>
             <p className="aboutme">
-              {aboutme}
+              {aboutMe}
             </p>
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
