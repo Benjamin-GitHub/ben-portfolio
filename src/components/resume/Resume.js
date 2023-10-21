@@ -1,33 +1,32 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Link } from '@material-ui/core';
-import { TextDecrypt } from '../content/TextDecrypt';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import { Typography, Link } from "@material-ui/core";
+import { TextDecrypt } from "../content/TextDecrypt";
 // import ResumePDF from './../../assets/CV Benjamin Mehrdad.pdf';
-import {ResumeIcon} from '../content/ResumeButton';
+import { ResumeIcon } from "../content/ResumeButton";
 
-import Modal from '@material-ui/core/Modal';
-import Backdrop from '@material-ui/core/Backdrop';
-import Fade from '@material-ui/core/Fade';
+import Modal from "@material-ui/core/Modal";
+import Backdrop from "@material-ui/core/Backdrop";
+import Fade from "@material-ui/core/Fade";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   footerText: {
-    position: 'fixed',
+    position: "fixed",
     bottom: theme.spacing(6),
     left: theme.spacing(6),
-    '&:hover': {
+    "&:hover": {
       color: theme.palette.primary.main,
     },
-    transition: 'all 0.5s ease',
-    display: 'flex',
-    alignItems: 'center',
-    flexWrap: 'wrap',
+    transition: "all 0.5s ease",
+    display: "flex",
+    alignItems: "center",
+    flexWrap: "wrap",
   },
-  
 }));
 
 // const useStyles = makeStyles((theme) => ({
@@ -43,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
 //     padding: theme.spacing(2, 4, 3),
 //   },
 // }));
-
 
 // export const Resume = () => {
 //   const classes = useStyles();
@@ -80,19 +78,18 @@ export const Resume = () => {
   return (
     <div>
       <Link
-      color='inherit'
-      underline='none'
-      onClick={handleOpen}
-      // href= {`${ResumePDF}`}
-      target='_blank'
-      rel='noopener noreferrer'
-      className={classes.footerText}
-    >
-       <ResumeIcon />
-       <Typography component='span'>
-         <TextDecrypt text={' Resume'} />
-       </Typography>
-     </Link>
+        color="inherit"
+        underline="none"
+        onClick={handleOpen}
+        // href= {`${ResumePDF}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={classes.footerText}>
+        <ResumeIcon />
+        <Typography component="span">
+          <TextDecrypt text={" Resume"} />
+        </Typography>
+      </Link>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -103,8 +100,7 @@ export const Resume = () => {
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
-        }}
-      >
+        }}>
         <Fade in={open}>
           <div className={classes.paper}>
             <h2 id="transition-modal-title">Please contact via Email</h2>
@@ -114,4 +110,4 @@ export const Resume = () => {
       </Modal>
     </div>
   );
-}
+};
