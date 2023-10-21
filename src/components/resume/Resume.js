@@ -81,7 +81,7 @@ export const Resume = () => {
         color="inherit"
         underline="none"
         onClick={handleOpen}
-        // href= {`${ResumePDF}`}
+        href={`mailto:benjaminmhrdd@gmail.com`}
         target="_blank"
         rel="noopener noreferrer"
         className={classes.footerText}>
