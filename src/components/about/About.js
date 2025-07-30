@@ -20,11 +20,11 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutme = `I'm ${FirstName} ${LastName}, an AI/ML programmer and researcher currently pursuing my Master's degree in Artificial Intelligence at London South Bank University (LSBU). 
+  const aboutme = `I'm ${FirstName} ${LastName}, an AI/ML programmer and researcher pursuing my Master's degree in Artificial Intelligence at London South Bank University (LSBU). 
 
-My core focus lies in Retrieval-Augmented Generation (RAG) architectures, machine learning, and real-world AI applications—especially in domains like healthcare and scientific research. I enjoy bridging the gap between academic research and practical innovation, contributing to papers, open-source work, and prototypes that explore trustworthy and scalable AI systems.
+My focus lies in Retrieval-Augmented Generation (RAG) architectures, machine learning, and real-world AI applications—especially in healthcare and scientific research. I enjoy bridging academic research with practical innovation, contributing to papers and open-source work that explore trustworthy AI systems.
 
-Currently based in London, I'm always open to meaningful collaborations, particularly those that combine research with social or industry impact.`;
+Currently based in London, I'm always open to meaningful collaborations that combine research with social impact.`;
 
   return (
     <section id="about">

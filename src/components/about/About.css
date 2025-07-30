@@ -1,25 +1,27 @@
 .about {
-  width: 80%;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 2rem;
 }
 .heading {
   width: 30%;
   font-size: 1.15rem;
 }
 ._img {
-  margin: 10em;
-  width: 35em;
-  height: 20em;
+  margin: 2rem;
+  width: 30%;
+  height: 300px;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.51);
+  flex-shrink: 0;
 }
 ._content_wrapper {
-  width: 40%;
+  width: 60%;
+  padding-left: 2rem;
 }
 .contact-btn {
   margin-right: 20px;
@@ -33,27 +35,31 @@
 }
 @media (max-width: 1024px) {
   .about {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin: 0 auto;
+    width: 95%;
   }
   ._img {
-    margin: 2em;
+    width: 35%;
+    height: 250px;
   }
   ._content_wrapper {
-    width: 40%;
+    width: 65%;
   }
 }
 @media (max-width: 768px) {
   .about {
-    margin-left: 4em;
-    margin-right: 4em;
+    margin: 0 auto;
     flex-direction: column;
+    width: 95%;
   }
   ._img {
-    width: 15em;
-    height: 12em;
+    width: 80%;
+    max-width: 300px;
+    height: 200px;
   }
   ._content_wrapper {
-    width: 15em;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 1rem;
   }
 }
