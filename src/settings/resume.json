@@ -1,19 +1,19 @@
 {
     "basics": {
         "name": "Benjamin Mehrdad",
-        "label": "Full Stack Web Developer",
+        "label": "AI/ML Programmer & Researcher",
         "email": "benjaminmhrdd@gmail.com",
         "phone": "(XXX) XXX-XXXX",
         "picture": "bm.png",
         "x_title": "Hello, I'm",
-        "job1": "Web",
-        "job2": "Developer",
-        "description": "Hello! I'm Ben! Your web development enthusiast. Always down for something new and challenging! Just like markdown, I'm here to help you create beautifully formatted websites.",
+        "job1": "AI/ML",
+        "job2": "Programmer",
+        "description": "Hello! I'm Ben, an AI/ML programmer and researcher currently pursuing my Master's degree in AI at London South Bank University (LSBU). I specialize in RAG (Retrieval-Augmented Generation) and machine learning, with a passion for building intelligent systems and contributing to academic research.",
         "summary": "based in London, UK.",
         "keywords": "personal,website,portfolio,template,kit,Benjamin,Mehrdad,webdev,web,developer,London,UK,react,github,linkedin,google,gitlab,telegram,material,design,ui,webapp,markdown",
         "url": "https://www.ben-m.dev/",
         "location": {
-            "address": "XX XXXXXstreet",
+            "address": "XX st.",
             "postalCode": "XXXXX",
             "city": "LONDON",
             "country": "United Kingdom",
@@ -22,105 +22,100 @@
         },
         "profiles": [
             {
-                "network": "Google",
-                "username": "benjaminmhrdd@gmail.com",
-                "url": "mailto:benjaminmhrdd@gmail.com",
-                "x_icon": "fab fa-google"
-            },
-            {
                 "network": "LinkedIn",
-                "username": "benjamin-yamin-mehrdad",
-                "url": "https://www.linkedin.com/in/benjamin-yamin-mehrdad/",
+                "username": "your-linkedin-username",
+                "url": "https://www.linkedin.com/in/your-linkedin-profile/",
                 "x_icon": "fab fa-linkedin-in"
             },
             {
                 "network": "GitHub",
-                "username": "benjamin-github",
-                "url": "https://github.com/Benjamin-GitHub",
+                "username": "your-github-username",
+                "url": "https://github.com/your-github-profile",
                 "x_icon": "fab fa-github"
             },
             {
-                "network": "GitLab",
-                "username": "benjamin-github",
-                "url": "https://gitlab.com/Benjamin-GitHub",
-                "x_icon": "fab fa-gitlab"
-            },
-            {
-                "network": "Telegram",
-                "username": "Benjaminmehrdad",
-                "url": "https://t.me/benjaminmehrdad",
-                "x_icon": "fab fa-telegram-plane"
-            },
-            {
-                "network": "Discord",
-                "username": "benmhrdd",
-                "url": "https://discord.com",
-                "x_icon": "fab fa-discord"
+                "network": "Email",
+                "username": "ben@example.com",
+                "url": "mailto:ben@example.com",
+                "x_icon": "fas fa-envelope"
             }
         ]
     },
     "work": [
         {
-            "company": "Company",
-            "position": "President",
-            "website": "http://company.com",
-            "startDate": "2013-01-01",
-            "endDate": "2014-01-01",
-            "summary": "Description...",
-            "highlights": ["Started the company"]
+            "company": "London South Bank University",
+            "position": "AI/ML Researcher",
+            "website": "https://www.lsbu.ac.uk/",
+            "startDate": "2023-09-01",
+            "endDate": "Present",
+            "summary": "Pursuing Master's degree in AI with focus on RAG (Retrieval-Augmented Generation) and machine learning research. Contributing to academic papers in AI and ML domains.",
+            "highlights": ["RAG Research", "Machine Learning", "Academic Papers", "AI Development"]
         }
     ],
     "volunteer": [
         {
-            "organization": "Organization",
-            "position": "Volunteer",
-            "website": "http://organization.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Description...",
-            "highlights": ["Awarded 'Volunteer of the Month'"]
+            "organization": "AI Research Community",
+            "position": "Research Contributor",
+            "website": "",
+            "startDate": "2023-01-01",
+            "endDate": "Present",
+            "summary": "Contributing to AI research papers and open-source projects in the field of machine learning and natural language processing.",
+            "highlights": ["Research Papers", "Open Source", "AI Community"]
         }
     ],
     "education": [
         {
-            "institution": "University",
-            "area": "Software Development",
-            "studyType": "Bachelor",
-            "startDate": "2011-01-01",
-            "endDate": "2013-01-01",
-            "gpa": "4.0",
-            "courses": ["DB1101 - Basic SQL"]
+            "institution": "London South Bank University (LSBU)",
+            "area": "Artificial Intelligence",
+            "studyType": "Master's Degree",
+            "startDate": "2024-09-01",
+            "endDate": "Present",
+            "gpa": "In Progress",
+            "courses": ["Machine Learning", "RAG Systems", "Deep Learning", "NLP"]
         }
     ],
     "awards": [
         {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
+            "title": "AI Research Recognition",
+            "date": "2024-01-01",
+            "awarder": "Academic Community",
+            "summary": "Contributing to cutting-edge research in RAG and ML technologies."
         }
     ],
     "publications": [
         {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "website": "http://publication.com",
-            "summary": "Description..."
+            "name": "RAG Implementation in Modern AI Systems",
+            "publisher": "Academic Research",
+            "releaseDate": "2024-01-01",
+            "website": "",
+            "summary": "Research paper on Retrieval-Augmented Generation implementation and applications in modern AI systems."
+        },
+        {
+            "name": "Machine Learning Applications in NLP",
+            "publisher": "Academic Research",
+            "releaseDate": "2024-01-01",
+            "website": "",
+            "summary": "Research on machine learning techniques applied to natural language processing tasks."
         }
     ],
     "skills": [
         {
-            "name": "Full Stack Web Development",
-            "level": "Master",
-            "keywords": ["HTML", "CSS", "Javascript"]
+            "name": "AI/ML Development",
+            "level": "Advanced",
+            "keywords": ["Python", "TensorFlow", "PyTorch", "Scikit-learn", "RAG", "NLP"]
+        },
+        {
+            "name": "Full Stack Development",
+            "level": "Intermediate",
+            "keywords": ["React", "JavaScript", "Node.js", "HTML", "CSS"]
+        },
+        {
+            "name": "Research & Analysis",
+            "level": "Advanced",
+            "keywords": ["Data Analysis", "Research Papers", "Academic Writing", "Statistical Analysis"]
         }
     ],
     "languages": [
-        {
-            "language": "Farsi",
-            "fluency": "Native speaker"
-        },
         {
             "language": "English",
             "fluency": "Fluent speaker"
@@ -128,14 +123,18 @@
     ],
     "interests": [
         {
-            "name": "Wildlife",
-            "keywords": ["Ferrets", "Unicorns"]
+            "name": "Artificial Intelligence",
+            "keywords": ["Machine Learning", "RAG", "NLP", "Deep Learning"]
+        },
+        {
+            "name": "Research",
+            "keywords": ["Academic Papers", "AI Research", "Innovation"]
         }
     ],
     "references": [
         {
-            "name": "Mark Graham",
-            "reference": "Reference..."
+            "name": "Academic Supervisor",
+            "reference": "Available upon request"
         }
     ]
 }
