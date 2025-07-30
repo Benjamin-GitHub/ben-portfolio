@@ -23,20 +23,20 @@
         "profiles": [
             {
                 "network": "LinkedIn",
-                "username": "your-linkedin-username",
-                "url": "https://www.linkedin.com/in/your-linkedin-profile/",
+                "username": "LinkedIn -> Benjamin Mehrdad",
+                "url": "https://www.linkedin.com/in/benjamin-yamin-mehrdad/",
                 "x_icon": "fab fa-linkedin-in"
             },
             {
                 "network": "GitHub",
-                "username": "your-github-username",
-                "url": "https://github.com/your-github-profile",
+                "username": "GitHub -> Benjamin-GitHub",
+                "url": "https://github.com/Benjamin-GitHub",
                 "x_icon": "fab fa-github"
             },
             {
                 "network": "Email",
-                "username": "ben@example.com",
-                "url": "mailto:ben@example.com",
+                "username": "Email",
+                "url": "mailto:benjaminmhrdd@gmail.com",
                 "x_icon": "fas fa-envelope"
             }
         ]
