@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Ben's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React.js showcasing my work as an AI/ML programmer and researcher.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Visit my portfolio at: www.ben-m.dev
 
-### `npm start`
+## 🎯 About Me
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+I'm Ben, a passionate programmer currently pursuing my Master's degree in AI at London South Bank University (LSBU). Based in London, I specialize in:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **AI/ML Development** - Building intelligent systems and machine learning models
+- **RAG (Retrieval-Augmented Generation)** - Research and implementation of advanced NLP techniques
+- **Full-Stack Development** - Creating robust web applications and APIs
+- **Research** - Contributing to academic papers in AI and ML in Healthcare, Finance and Law domains
 
-### `npm test`
+## 🛠️ Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend**: React.js, Material-UI, Three.js
+- **Styling**: CSS3, Responsive Design
+- **Animations**: React Transition Group, Popmotion
+- **Contact**: EmailJS for form handling
+- **Deployment**: Heroku with custom domain
 
-### `npm run build`
+## 📁 Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+src/
+├── components/          # React components
+│   ├── about/          # About section
+│   ├── contact/        # Contact form
+│   ├── content/        # Main content display
+│   ├── works/          # Portfolio projects
+│   └── theme/          # Theme customization
+├── assets/             # Images and static files
+├── settings/           # Configuration files
+└── utils/              # Utility functions
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+- Node.js (v18.x or higher)
+- npm or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository
+```bash
+git clone [your-repo-url]
+cd portfolio
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Install dependencies
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Start the development server
+```bash
+npm start
+```
 
-## Learn More
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Building for Production
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+## 📝 Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The portfolio is highly customizable through the following files:
 
-### Analyzing the Bundle Size
+- `src/settings/resume.json` - Personal information, skills, experience
+- `src/components/` - Individual section components
+- `src/assets/` - Images and project screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎨 Features
 
-### Making a Progressive Web App
+- **Responsive Design** - Works seamlessly on all devices
+- **3D Animations** - Interactive Three.js background elements
+- **Dark/Light Theme** - Toggle between themes
+- **Contact Form** - Integrated EmailJS for direct messaging
+- **Project Showcase** - Display your AI/ML projects and research papers
+- **Smooth Animations** - Enhanced user experience with transitions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📊 Current Projects
 
-### Advanced Configuration
+- **AI/ML Research Papers** - NLP(RAG) and ML topics (in progress)
+- **GitHub Projects** - Various programming projects
+- **Academic Research** - Contributing to AI advancement
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔗 Connect With Me
 
-### Deployment
+- **LinkedIn**: https://www.linkedin.com/in/benjamin-yamin-mehrdad/
+- **GitHub**: https://github.com/Benjamin-GitHub
+- **Email**: benjaminmhrdd@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🙏 Credits
 
-### `npm run build` fails to minify
+- **Background Animation**: The stunning 3D background animation is based on work by [Cody Jason Bennett](https://github.com/CodyJasonBennett), a talented graphics and game developer specializing in Three.js and React Three Fiber.
+- **Three.js Implementation**: Inspired by Cody's contributions to the Three.js community and his work with @pmndrs.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Feel free to fork this project and customize it for your own portfolio. If you find any bugs or have suggestions, please open an issue.
+
+---
+
+*Built with ❤️ using React.js and deployed on Heroku*
