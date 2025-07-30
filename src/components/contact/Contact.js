@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useRef } from "react";
-import { Container, Typography, TextField } from "@material-ui/core";
-import { makeStyles } from '@material-ui/core/styles';
+import { Container, Typography, TextField, Button } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 import Swal from 'sweetalert2';
 
@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   form: {
     width: '100%',
   },
-  formField: {
+  formfield: {
     width: '100%',
     marginBottom: '2rem',
   },
@@ -66,22 +66,20 @@ export const Contact = () => {
                   type="text"
                   size="small"
                   variant="filled"
-                  autoComplete="on"
                   name="name"
-                  className={classes.formField}
+                  className={classes.formfield}
                 />
                 <TextField
-                  id="outlined-email-input"
+                  id="outlined-password-input"
                   label="Email"
                   type="email"
                   size="small"
                   variant="filled"
-                  autoComplete="on"
                   name="email"
-                  className={classes.formField}
+                  className={classes.formfield}
                 />
                 <TextField
-                  id="outlined-message-input"
+                  id="outlined-password-input"
                   label="Message"
                   type="textarea"
                   size="small"
@@ -89,7 +87,7 @@ export const Contact = () => {
                   minRows={5}
                   variant="filled"
                   name="message"
-                  className={classes.formField}
+                  className={classes.formfield}
                 />
                 <button type="submit" value="Send" className="submit-btn">
                 <i className="fas fa-terminal"></i>
@@ -100,6 +98,23 @@ export const Contact = () => {
             <h1 className="contact_msg">
               <TextDecrypt text={greetings}/>
             </h1>
+          </div>
+          <div className="footer-attribution">
+            <p>
+              © 2025 Benjamin Mehrdad. All rights reserved.
+            </p>
+            <p>
+              Background animation by{' '}
+              <a 
+                href="https://github.com/CodyJasonBennett" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                Cody Jason Bennett
+              </a>
+            </p>
+            
           </div>
         </Container>
       </section>

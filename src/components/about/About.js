@@ -20,11 +20,12 @@ const useStyles = makeStyles((theme) => ({
 export const About = () => {
   const classes = useStyles();
   const greetings = "Hello there!";
-  const aboutMe = `I'm ${FirstName} ${LastName}, Hardworking, motivated
-   and reliable web developer who has experience working individually and
-    as part of a team. After a decade of working as a technician and engineer, 
-    I decided to relocate to the UK and follow my passion for technology, 
-    joining an intense year-long boot-camp in web development.`;
+  const aboutme = `I'm ${FirstName} ${LastName}, an AI/ML programmer and researcher currently pursuing my Master's degree in Artificial Intelligence at London South Bank University (LSBU). 
+
+My core focus lies in Retrieval-Augmented Generation (RAG) architectures, machine learning, and real-world AI applications—especially in domains like healthcare and scientific research. I enjoy bridging the gap between academic research and practical innovation, contributing to papers, open-source work, and prototypes that explore trustworthy and scalable AI systems.
+
+Currently based in London, I'm always open to meaningful collaborations, particularly those that combine research with social or industry impact.`;
+
   return (
     <section id="about">
       <Container component="main" className={classes.main} maxWidth="md">
@@ -43,7 +44,7 @@ export const About = () => {
               <TextDecrypt text={`${greetings}`} />
             </Typography>
             <p className="aboutme">
-              {aboutMe}
+              {aboutme}
             </p>
             <a href="#contact" className="contact-btn">
               <i className="fas fa-terminal"></i>
