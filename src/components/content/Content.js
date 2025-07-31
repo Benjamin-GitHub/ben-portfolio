@@ -17,10 +17,22 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(10),
     },
   },
+  name: {
+    marginBottom: theme.spacing(5), // Double spacing between name and job titles
+    fontSize: '2.5rem', // Half size of job text (h1 is typically 6rem, so 3rem)
+    "@media (max-width: 768px)": {
+      fontSize: '1.2rem',
+    },
+  },
   jobs: {
+    display: 'flex',
+    flexDirection: 'column',
     "@media (max-width: 768px)": {
       fontSize: '3rem',
     },
+  },
+  jobLine: {
+    lineHeight: 1.2, // Tighter line height to keep AI/ML and Programmer closer
   },
 }));
 
@@ -30,12 +42,16 @@ export const Content = () => {
   return (
     <Container component="main" className={classes.main} maxWidth="md">
       <div className={classes.heading}>
-        <Typography variant="h5" component="h2">
+        <Typography variant="h3" component="h2" className={classes.name}>
             <TextDecrypt text={`${FirstName} ${LastName}`} />
         </Typography>
         <Typography variant="h1" component="h1" className={classes.jobs}>
-            <TextDecrypt text={`${Resume.basics.job1} + `} />
-            <TextDecrypt text={`${Resume.basics.job2}`} />
+            <div className={classes.jobLine}>
+                <TextDecrypt text={`${Resume.basics.job1} +`} />
+            </div>
+            <div className={classes.jobLine}>
+                <TextDecrypt text={`${Resume.basics.job2}`} />
+            </div>
         </Typography>
       </div>
     </Container>
