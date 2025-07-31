@@ -70,7 +70,7 @@ const useDecryptEffect = (text, glitchDuration = 2000) => {
 };
 
 export const TextDecrypt = (props) => {
-  const { displayText, isGlitching, showLine, revealedChars } = useDecryptEffect(props.text || "", 2000);
+  const { displayText, isGlitching, showLine } = useDecryptEffect(props.text || "", 2000);
   
   return (
     <span style={{ 
