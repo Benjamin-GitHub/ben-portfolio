@@ -8,6 +8,7 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/projects/
+import FakeNewsDetector from '../../assets/projects/Fake-News-Detector.png';
 import Portfolio from '../../assets/projects/react-portfolio.png';
 import Deskeando from '../../assets/projects/deskeando.png';
 import Quiz from '../../assets/projects/quiz.png';
@@ -26,6 +27,13 @@ export const Works = () => {
   const [projects, setProjects] = useState([
     { 
       id: 1,
+      title: 'Fake News Detector', 
+      description: `A machine learning web application that detects fake news using NLP techniques and pre-trained models. Users can input news articles through a Flask web interface to receive predictions with confidence scores, sentiment analysis, and highlighted suspicious content. Built with Python, scikit-learn, and TF-IDF vectorization for real-time fake news detection.`,
+      alter: 'Fake News Detector',
+      image: `${FakeNewsDetector}`,
+    },
+    { 
+      id: 2,
       title: 'React Portfolio', 
       description: `Designed and developed a ReactJS portfolio 
       with fancy 3D animations using Three.js for 
@@ -34,7 +42,7 @@ export const Works = () => {
       image: `${Portfolio}`,
     },
     { 
-      id: 2,
+      id: 3,
       title: 'Deskeando Project', 
       description: `An booking desk application project built using
       ReactJs, for booking a desk with specified seat and table on the different floors for Avaloq.`,
@@ -42,7 +50,7 @@ export const Works = () => {
       image: `${Deskeando}`,
     },
     { 
-      id: 3,
+      id: 4,
       title: 'Quiz App Project', 
       description: `Quiz app designed for asking random questions with ability giving the final score and getting data from an API.`,
       alter: 'Quiz App Project',
