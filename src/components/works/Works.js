@@ -10,6 +10,7 @@ import './Works.css';
 // Import ../../assets/projects/
 import FakeNewsDetector from '../../assets/projects/Fake-News-Detector.png';
 import Portfolio from '../../assets/projects/react-portfolio.png';
+import LogicGatesApp from '../../assets/projects/Logic-Gates-App.png';
 import Deskeando from '../../assets/projects/deskeando.png';
 import Quiz from '../../assets/projects/quiz.png';
 
@@ -34,6 +35,13 @@ export const Works = () => {
     },
     { 
       id: 2,
+      title: 'Logic Gates App', 
+      description: `The Logic Gate Simulator is an interactive drag-and-drop web application that allows users to create, connect, and simulate digital logic circuits. Users can add logic gates to a canvas, move them freely, and connect them with wires to visualize how logical operations work.`,
+      alter: 'Logic Gates App',
+      image: `${LogicGatesApp}`,
+    },
+    { 
+      id: 3,
       title: 'React Portfolio', 
       description: `Designed and developed a ReactJS portfolio 
       with fancy 3D animations using Three.js for 
@@ -42,7 +50,7 @@ export const Works = () => {
       image: `${Portfolio}`,
     },
     { 
-      id: 3,
+      id: 4,
       title: 'Deskeando Project', 
       description: `An booking desk application project built using
       ReactJs, for booking a desk with specified seat and table on the different floors for Avaloq.`,
@@ -50,7 +58,7 @@ export const Works = () => {
       image: `${Deskeando}`,
     },
     { 
-      id: 4,
+      id: 5,
       title: 'Quiz App Project', 
       description: `Quiz app designed for asking random questions with ability giving the final score and getting data from an API.`,
       alter: 'Quiz App Project',
