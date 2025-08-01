@@ -7,7 +7,7 @@ import { FirstName, LastName } from "../../utils/getName";
 
 import './About.css';
 
-import profile from '../../assets/profile.png';
+import profile2 from '../../assets/profile2.svg';
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -30,14 +30,12 @@ Currently based in London, I'm always open to meaningful collaborations that com
     <section id="about">
       <Container component="main" className={classes.main} maxWidth="md">
         <div className="about">
-          <div className="_img"
-            style={{ 
-              background: "url(" + profile + ")",
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
+          <div className="_img">
+            <img 
+              src={profile2} 
+              alt={`${FirstName} ${LastName}`}
+              className="profile-image"
+            />
           </div>
           <div className="_content_wrapper">
             <Typography component='h2' variant="h5">
