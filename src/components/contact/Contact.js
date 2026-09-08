@@ -1,7 +1,5 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import { useRef } from "react";
-import { Container, Typography, TextField, Button } from "@material-ui/core";
+import React, { useRef, useState } from "react";
+import { Container, Typography, TextField } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { TextDecrypt } from "../content/TextDecrypt";
 import Swal from 'sweetalert2';
@@ -10,7 +8,7 @@ import emailjs from '@emailjs/browser';
 
 import './Contact.css';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   main: {
     maxWidth: '100vw',
     marginTop: '3em',
@@ -32,26 +30,41 @@ export const Contact = () => {
   const greetings = "Say hello.";
 
   const form = useRef();
+  const sending = useRef(false);
+  const [isSending, setIsSending] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    if (sending.current || !form.current.reportValidity()) return;
 
-    emailjs.sendForm('service_8bezxog', 'template_jmsk313', form.current, 'knwNTK4YU4K30HYMd')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
+    const submittedForm = form.current;
+    sending.current = true;
+    setIsSending(true);
+
+    try {
+      await emailjs.sendForm(
+        'service_8bezxog',
+        'template_jmsk313',
+        submittedForm,
+        { publicKey: 'knwNTK4YU4K30HYMd' }
+      );
+      submittedForm.reset();
+      Swal.fire({
+        icon: 'success',
+        title: 'Message sent',
+        text: 'Thank you for getting in touch.',
       });
-    Swal.fire({
-      position: 'center',
-      icon: 'success',
-      title: 'You have sent an email!',
-      showConfirmButton: false,
-      timer: 1500
-    })
-    e.target.reset()
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Message could not be sent',
+        text: 'Your message is still here. Please try again, or email benjaminmhrdd@gmail.com directly.',
+      });
+    } finally {
+      sending.current = false;
+      setIsSending(false);
+    }
   };
-
 
 
     return (
@@ -59,7 +72,7 @@ export const Contact = () => {
         <Container component="main" className={classes.main} maxWidth="md">
           <div className="contact">
             <div className="_form_wrapper">
-              <form ref={form} onSubmit={sendEmail} className={classes.form}>
+              <form ref={form} onSubmit={sendEmail} className={classes.form} aria-busy={isSending}>
                 <TextField
                   id="outlined-name-input"
                   label="Name"
@@ -67,31 +80,36 @@ export const Contact = () => {
                   size="small"
                   variant="filled"
                   name="name"
+                  required
+                  InputProps={{ readOnly: isSending }}
                   className={classes.formfield}
                 />
                 <TextField
-                  id="outlined-password-input"
+                  id="contact-email"
                   label="Email"
                   type="email"
                   size="small"
                   variant="filled"
                   name="email"
+                  required
+                  InputProps={{ readOnly: isSending }}
                   className={classes.formfield}
                 />
                 <TextField
-                  id="outlined-password-input"
+                  id="contact-message"
                   label="Message"
-                  type="textarea"
                   size="small"
                   multiline
                   minRows={5}
                   variant="filled"
                   name="message"
+                  required
+                  InputProps={{ readOnly: isSending }}
                   className={classes.formfield}
                 />
-                <button type="submit" value="Send" className="submit-btn">
+                <button type="submit" value="Send" className="submit-btn" disabled={isSending}>
                 <i className="fas fa-terminal"></i>
-                  <Typography component='span'> Send Message</Typography>
+                  <Typography component='span' role='status'>{isSending ? 'Sending…' : 'Send Message'}</Typography>
                 </button>
               </form>
             </div>
