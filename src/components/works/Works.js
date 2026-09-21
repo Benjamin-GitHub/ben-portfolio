@@ -9,7 +9,7 @@ import './Works.css';
 
 // Import ../../assets/projects/
 import FakeNewsDetector from '../../assets/projects/Fake-News-Detector-screen.png';
-import Portfolio from '../../assets/projects/react-portfolio-screen.png';
+import BanglaCyberbullying from '../../assets/projects/bangla-cyberbullying-screen.png';
 import LogicGatesApp from '../../assets/projects/Logic-Gates-App-screen.png';
 import Deskeando from '../../assets/projects/deskeando-screen.jpg';
 import WorkforceDigitalTwin from '../../assets/projects/workforce-digital-twin-screen.png';
@@ -35,6 +35,15 @@ export const Works = () => {
       image: WorkforceDigitalTwin,
       repository: 'https://github.com/Benjamin-GitHub/workforce-digital-twin',
     },
+    {
+      id: 7,
+      title: 'Bangla Cyberbullying Detection',
+      description: `A deep learning project classifying Bangla social media comments across five categories. Compares a classical baseline, neural networks, BiLSTM, and BanglaBERT, with recorded model evaluations. A Streamlit app serves the BiLSTM model and displays predictions with class probabilities. Built with Python, TensorFlow/Keras, and Hugging Face tools for research and educational use.`,
+      alter: 'Laptop displaying the Bangla Cyberbullying Detector with a sample Bangla comment ready for classification.',
+      image: BanglaCyberbullying,
+      repository: 'https://github.com/Benjamin-GitHub/bangla_cyberbullying_dl',
+      demo: 'https://huggingface.co/spaces/Benjamin-GitHub/bangla-cyberbullying-app',
+    },
     { 
       id: 1,
       title: 'Fake News Detector', 
@@ -48,15 +57,6 @@ export const Works = () => {
       description: `The Logic Gate Simulator is an interactive drag-and-drop web application that allows users to create, connect, and simulate digital logic circuits. Users can add logic gates to a canvas, move them freely, and connect them with wires to visualize how logical operations work.`,
       alter: 'Logic Gates App',
       image: `${LogicGatesApp}`,
-    },
-    { 
-      id: 3,
-      title: 'React Portfolio', 
-      description: `Designed and developed a ReactJS portfolio 
-      with fancy 3D animations using Three.js for 
-      the background element.`,
-      alter: 'React Portfolio',
-      image: `${Portfolio}`,
     },
     { 
       id: 4,
@@ -83,6 +83,11 @@ export const Works = () => {
               <p className="description">
                 { project.description }
               </p>
+              {project.demo && (
+                <a className="project-repository" href={project.demo} target="_blank" rel="noopener noreferrer" aria-label={`Try ${project.title} live demo (opens in a new tab)`}>
+                  Try live demo ↗
+                </a>
+              )}
               {project.repository && (
                 <a className="project-repository" href={project.repository} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub (opens in a new tab)`}>
                   View on GitHub ↗
