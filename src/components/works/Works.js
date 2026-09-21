@@ -8,11 +8,12 @@ import { TextDecrypt } from "../content/TextDecrypt";
 import './Works.css';
 
 // Import ../../assets/projects/
-import FakeNewsDetector from '../../assets/projects/Fake-News-Detector.png';
-import Portfolio from '../../assets/projects/react-portfolio.png';
-import LogicGatesApp from '../../assets/projects/Logic-Gates-App.png';
-import Deskeando from '../../assets/projects/deskeando.png';
-import Quiz from '../../assets/projects/quiz.png';
+import FakeNewsDetector from '../../assets/projects/Fake-News-Detector-screen.png';
+import Portfolio from '../../assets/projects/react-portfolio-screen.png';
+import LogicGatesApp from '../../assets/projects/Logic-Gates-App-screen.png';
+import Deskeando from '../../assets/projects/deskeando-screen.jpg';
+import WorkforceDigitalTwin from '../../assets/projects/workforce-digital-twin-screen.png';
+import { LaptopMockup } from './LaptopMockup';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -26,6 +27,14 @@ const useStyles = makeStyles((theme) => ({
 export const Works = () => {
   const classes = useStyles();
   const [projects, setProjects] = useState([
+    {
+      id: 6,
+      title: 'Workforce Digital Twin',
+      description: `A research prototype for monitoring worker activity through computer vision and sensor telemetry. Combines a live dashboard, a FastAPI backend, MQTT messaging, and WebSocket updates to display activity, protective equipment status, and persistent event history. Includes an Android sensor app and an ESP32 camera-streaming component.`,
+      alter: 'Laptop displaying the Workforce Digital Twin dashboard with worker activity, protective equipment status, and sensor telemetry.',
+      image: WorkforceDigitalTwin,
+      repository: 'https://github.com/Benjamin-GitHub/workforce-digital-twin',
+    },
     { 
       id: 1,
       title: 'Fake News Detector', 
@@ -57,30 +66,28 @@ export const Works = () => {
       alter: 'Deskeando Project',
       image: `${Deskeando}`,
     },
-    { 
-      id: 5,
-      title: 'Quiz App Project', 
-      description: `Quiz app designed for asking random questions with ability giving the final score and getting data from an API.`,
-      alter: 'Quiz App Project',
-      image: `${Quiz}`,
-    },
   ]);
 
   return (
     <section id="works">
       <Container component="main" className={classes.main} maxWidth="md">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <div className="project" key={ project.id }>
             <div className="__img_wrapper">
-              <img src={ project.image } alt={ project.alter }/>
+              <LaptopMockup image={project.image} alt={project.alter} />
             </div>
             <div className="__content_wrapper">
               <h3 className="title">
-                <TextDecrypt text={ project.id + '. ' + project.title } />
+                <TextDecrypt text={ (index + 1) + '. ' + project.title } />
               </h3>
               <p className="description">
                 { project.description }
               </p>
+              {project.repository && (
+                <a className="project-repository" href={project.repository} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub (opens in a new tab)`}>
+                  View on GitHub ↗
+                </a>
+              )}
             </div>
           </div>
         ))}
