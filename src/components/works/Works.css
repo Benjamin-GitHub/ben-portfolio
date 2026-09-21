@@ -6,6 +6,16 @@
   align-items: center;
   justify-content: center;
 }
+.project-repository {
+  color: inherit;
+  margin: 0 1rem 1rem;
+  padding: 0.5rem;
+  text-underline-offset: 0.2em;
+}
+.project-repository:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
 .project-reverse {
   width: 80%;
   margin: 0 auto;
@@ -19,6 +29,11 @@
   flex: 1;
 }
 .__img_wrapper > img {
+  width: 100%;
+  height: auto;
+}
+.project-laptop {
+  display: block;
   width: 100%;
   height: auto;
 }
